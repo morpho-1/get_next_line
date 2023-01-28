@@ -62,7 +62,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	j = 0;
 	while (s2[j])
 		join[i++] = s2[j++];
-	join[ft_strlen(s1) + ft_strlen(s2)] = '\0';
+	join[i] = '\0';
 	free (s1);
 	return (join);
 }
